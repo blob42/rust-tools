@@ -3,4 +3,4 @@
 # LOG_DIR="$XDG_STATE_HOME/rust"
 LOG_DIR=$HOME/.local/state/rust
 [ ! -d $LOG_DIR ] && mkdir -p $LOG_DIR
-tee $LOG_DIR/rust-analyzer-in.log | rustup run stable rust-analyzer | tee $LOG_DIR/rust-analyzer-out.log
+tee $LOG_DIR/rust-analyzer-in.log | rustup run nightly rust-analyzer | tee $LOG_DIR/rust-analyzer-out.log
